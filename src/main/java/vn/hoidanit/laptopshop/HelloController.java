@@ -7,6 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/")
     public String index() {
-        return "Hello World!";
+        return "Hello asdas";
+    }
+
+    @GetMapping("/user")
+    public String indexUser() {
+        return "Hello user";
+    }
+
+    @GetMapping("/admin")
+    public String indexAdmin() {
+        return "Hello admin";
     }
 }
